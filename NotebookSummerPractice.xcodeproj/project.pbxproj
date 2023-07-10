@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050232DCFDC4083E9553F057 /* Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA34C3E1E6823F2659232E /* Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework */; };
+		66EC9C1D6E4DFF2D5AE65DCF /* Pods_NotebookSummerPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1660D2A63CE442A1A1F1CD2 /* Pods_NotebookSummerPractice.framework */; };
+		671B6BAC30CB977FD60E73C5 /* Pods_NotebookSummerPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466DCA1CB281FFCF04CD2FE /* Pods_NotebookSummerPracticeTests.framework */; };
+		EB1364E02A597902008A91B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1364DF2A597902008A91B3 /* AppDelegate.swift */; };
+		EB1364E42A597902008A91B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1364E32A597902008A91B3 /* ViewController.swift */; };
+		EB1364E72A597902008A91B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1364E52A597902008A91B3 /* Main.storyboard */; };
+		EB1364EA2A597902008A91B3 /* NotebookSummerPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB1364E82A597902008A91B3 /* NotebookSummerPractice.xcdatamodeld */; };
+		EB1364EC2A597903008A91B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1364EB2A597903008A91B3 /* Assets.xcassets */; };
+		EB1364EF2A597903008A91B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1364ED2A597903008A91B3 /* LaunchScreen.storyboard */; };
+		EB1364FA2A597903008A91B3 /* NotebookSummerPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1364F92A597903008A91B3 /* NotebookSummerPracticeTests.swift */; };
+		EB1365042A597903008A91B3 /* NotebookSummerPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365032A597903008A91B3 /* NotebookSummerPracticeUITests.swift */; };
+		EB1365062A597903008A91B3 /* NotebookSummerPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365052A597903008A91B3 /* NotebookSummerPracticeUITestsLaunchTests.swift */; };
+		EB1365142A5AAAAE008A91B3 /* MainCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365132A5AAAAE008A91B3 /* MainCalendarViewController.swift */; };
+		EB13651D2A5AE8A5008A91B3 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13651C2A5AE8A5008A91B3 /* CalendarTableViewCell.swift */; };
+		EB1365202A5AFA78008A91B3 /* AddNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13651F2A5AFA78008A91B3 /* AddNewEventViewController.swift */; };
+		EB1365222A5B18FD008A91B3 /* AddNewEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365212A5B18FD008A91B3 /* AddNewEventTableViewCell.swift */; };
+		EB1365242A5B66C0008A91B3 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365232A5B66C0008A91B3 /* DatePickerTableViewCell.swift */; };
+		EB1365262A5B7A26008A91B3 /* AddNewEventTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365252A5B7A26008A91B3 /* AddNewEventTextViewCell.swift */; };
+		EB1365282A5B7C0B008A91B3 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365272A5B7C0B008A91B3 /* CustomTextView.swift */; };
+		EB13652A2A5BF185008A91B3 /* DateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365292A5BF185008A91B3 /* DateConfigurator.swift */; };
+		EB13652D2A5C0DF4008A91B3 /* MainCalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13652C2A5C0DF4008A91B3 /* MainCalendarPresenter.swift */; };
+		EB1365322A5C0FD8008A91B3 /* FetchDataFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365312A5C0FD8008A91B3 /* FetchDataFromJSON.swift */; };
+		EB1365342A5C1209008A91B3 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365332A5C1209008A91B3 /* EventModel.swift */; };
+		EB1365362A5C12A9008A91B3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365352A5C12A9008A91B3 /* RealmManager.swift */; };
+		EB1365382A5C1442008A91B3 /* EventModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1365372A5C1442008A91B3 /* EventModelDTO.swift */; };
+		EBCFC3042A5C684200490416 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCFC3032A5C684200490416 /* EventDetailViewController.swift */; };
+		EBCFC3082A5C7DC000490416 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCFC3072A5C7DC000490416 /* DateExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1364F62A597903008A91B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1364D42A597902008A91B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1364DB2A597902008A91B3;
+			remoteInfo = NotebookSummerPractice;
+		};
+		EB1365002A597903008A91B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1364D42A597902008A91B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1364DB2A597902008A91B3;
+			remoteInfo = NotebookSummerPractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08EA34C3E1E6823F2659232E /* Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1742F81E54BC33DA5DB70663 /* Pods-NotebookSummerPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPractice.release.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPractice/Pods-NotebookSummerPractice.release.xcconfig"; sourceTree = "<group>"; };
+		65D1F0AD2A4D8B26C0F4CEBF /* Pods-NotebookSummerPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPractice.debug.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPractice/Pods-NotebookSummerPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		69DC15C14734E59659590898 /* Pods-NotebookSummerPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPracticeTests/Pods-NotebookSummerPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		902AE96EF32677289D2571CA /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9466DCA1CB281FFCF04CD2FE /* Pods_NotebookSummerPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotebookSummerPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1548729BEA3FBCF34624759 /* Pods-NotebookSummerPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPracticeTests/Pods-NotebookSummerPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1660D2A63CE442A1A1F1CD2 /* Pods_NotebookSummerPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotebookSummerPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1364DC2A597902008A91B3 /* NotebookSummerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotebookSummerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1364DF2A597902008A91B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1364E32A597902008A91B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB1364E62A597902008A91B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB1364E92A597902008A91B3 /* NotebookSummerPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotebookSummerPractice.xcdatamodel; sourceTree = "<group>"; };
+		EB1364EB2A597903008A91B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1364EE2A597903008A91B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1364F02A597903008A91B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1364F52A597903008A91B3 /* NotebookSummerPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotebookSummerPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1364F92A597903008A91B3 /* NotebookSummerPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSummerPracticeTests.swift; sourceTree = "<group>"; };
+		EB1364FF2A597903008A91B3 /* NotebookSummerPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotebookSummerPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1365032A597903008A91B3 /* NotebookSummerPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSummerPracticeUITests.swift; sourceTree = "<group>"; };
+		EB1365052A597903008A91B3 /* NotebookSummerPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookSummerPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB1365132A5AAAAE008A91B3 /* MainCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalendarViewController.swift; sourceTree = "<group>"; };
+		EB13651C2A5AE8A5008A91B3 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		EB13651F2A5AFA78008A91B3 /* AddNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventViewController.swift; sourceTree = "<group>"; };
+		EB1365212A5B18FD008A91B3 /* AddNewEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventTableViewCell.swift; sourceTree = "<group>"; };
+		EB1365232A5B66C0008A91B3 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		EB1365252A5B7A26008A91B3 /* AddNewEventTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventTextViewCell.swift; sourceTree = "<group>"; };
+		EB1365272A5B7C0B008A91B3 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		EB1365292A5BF185008A91B3 /* DateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConfigurator.swift; sourceTree = "<group>"; };
+		EB13652C2A5C0DF4008A91B3 /* MainCalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalendarPresenter.swift; sourceTree = "<group>"; };
+		EB13652F2A5C0F65008A91B3 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EB1365312A5C0FD8008A91B3 /* FetchDataFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataFromJSON.swift; sourceTree = "<group>"; };
+		EB1365332A5C1209008A91B3 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		EB1365352A5C12A9008A91B3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EB1365372A5C1442008A91B3 /* EventModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModelDTO.swift; sourceTree = "<group>"; };
+		EBCFC3032A5C684200490416 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		EBCFC3072A5C7DC000490416 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FFB74DF3327A26C985B8B351 /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1364D92A597902008A91B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EC9C1D6E4DFF2D5AE65DCF /* Pods_NotebookSummerPractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364F22A597903008A91B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671B6BAC30CB977FD60E73C5 /* Pods_NotebookSummerPracticeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364FC2A597903008A91B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050232DCFDC4083E9553F057 /* Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B668FE1740E8D9F9E3A107E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65D1F0AD2A4D8B26C0F4CEBF /* Pods-NotebookSummerPractice.debug.xcconfig */,
+				1742F81E54BC33DA5DB70663 /* Pods-NotebookSummerPractice.release.xcconfig */,
+				FFB74DF3327A26C985B8B351 /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.debug.xcconfig */,
+				902AE96EF32677289D2571CA /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.release.xcconfig */,
+				69DC15C14734E59659590898 /* Pods-NotebookSummerPracticeTests.debug.xcconfig */,
+				A1548729BEA3FBCF34624759 /* Pods-NotebookSummerPracticeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87DC3B6F84C427A880F2EBDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1660D2A63CE442A1A1F1CD2 /* Pods_NotebookSummerPractice.framework */,
+				08EA34C3E1E6823F2659232E /* Pods_NotebookSummerPractice_NotebookSummerPracticeUITests.framework */,
+				9466DCA1CB281FFCF04CD2FE /* Pods_NotebookSummerPracticeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB1364D32A597902008A91B3 = {
+			isa = PBXGroup;
+			children = (
+				EB1364DE2A597902008A91B3 /* NotebookSummerPractice */,
+				EB1364F82A597903008A91B3 /* NotebookSummerPracticeTests */,
+				EB1365022A597903008A91B3 /* NotebookSummerPracticeUITests */,
+				EB1364DD2A597902008A91B3 /* Products */,
+				4B668FE1740E8D9F9E3A107E /* Pods */,
+				87DC3B6F84C427A880F2EBDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1364DD2A597902008A91B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1364DC2A597902008A91B3 /* NotebookSummerPractice.app */,
+				EB1364F52A597903008A91B3 /* NotebookSummerPracticeTests.xctest */,
+				EB1364FF2A597903008A91B3 /* NotebookSummerPracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1364DE2A597902008A91B3 /* NotebookSummerPractice */ = {
+			isa = PBXGroup;
+			children = (
+				EB1365302A5C0FC2008A91B3 /* Services */,
+				EB13652B2A5C0DDD008A91B3 /* Presenters */,
+				EB1365172A5AB99F008A91B3 /* Resources */,
+				EB1365162A5AAAC8008A91B3 /* Models */,
+				EB1365152A5AAABB008A91B3 /* Views */,
+				EB1364DF2A597902008A91B3 /* AppDelegate.swift */,
+				EB1364E32A597902008A91B3 /* ViewController.swift */,
+				EB1364E52A597902008A91B3 /* Main.storyboard */,
+				EB1364EB2A597903008A91B3 /* Assets.xcassets */,
+				EB1364ED2A597903008A91B3 /* LaunchScreen.storyboard */,
+				EB1364F02A597903008A91B3 /* Info.plist */,
+				EB1364E82A597902008A91B3 /* NotebookSummerPractice.xcdatamodeld */,
+			);
+			path = NotebookSummerPractice;
+			sourceTree = "<group>";
+		};
+		EB1364F82A597903008A91B3 /* NotebookSummerPracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1364F92A597903008A91B3 /* NotebookSummerPracticeTests.swift */,
+			);
+			path = NotebookSummerPracticeTests;
+			sourceTree = "<group>";
+		};
+		EB1365022A597903008A91B3 /* NotebookSummerPracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1365032A597903008A91B3 /* NotebookSummerPracticeUITests.swift */,
+				EB1365052A597903008A91B3 /* NotebookSummerPracticeUITestsLaunchTests.swift */,
+			);
+			path = NotebookSummerPracticeUITests;
+			sourceTree = "<group>";
+		};
+		EB1365152A5AAABB008A91B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB13651F2A5AFA78008A91B3 /* AddNewEventViewController.swift */,
+				EB1365132A5AAAAE008A91B3 /* MainCalendarViewController.swift */,
+				EB13651E2A5AE8FF008A91B3 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB1365162A5AAAC8008A91B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBCFC3032A5C684200490416 /* EventDetailViewController.swift */,
+				EB1365332A5C1209008A91B3 /* EventModel.swift */,
+				EB1365372A5C1442008A91B3 /* EventModelDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB1365172A5AB99F008A91B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1365272A5B7C0B008A91B3 /* CustomTextView.swift */,
+				EB1365292A5BF185008A91B3 /* DateConfigurator.swift */,
+				EBCFC3072A5C7DC000490416 /* DateExtension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB13651E2A5AE8FF008A91B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB13651C2A5AE8A5008A91B3 /* CalendarTableViewCell.swift */,
+				EB1365212A5B18FD008A91B3 /* AddNewEventTableViewCell.swift */,
+				EB1365232A5B66C0008A91B3 /* DatePickerTableViewCell.swift */,
+				EB1365252A5B7A26008A91B3 /* AddNewEventTextViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EB13652B2A5C0DDD008A91B3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				EB13652C2A5C0DF4008A91B3 /* MainCalendarPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		EB1365302A5C0FC2008A91B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB13652F2A5C0F65008A91B3 /* data.json */,
+				EB1365312A5C0FD8008A91B3 /* FetchDataFromJSON.swift */,
+				EB1365352A5C12A9008A91B3 /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1364DB2A597902008A91B3 /* NotebookSummerPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1365092A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPractice" */;
+			buildPhases = (
+				BBCD045431F92A0126A2F5AD /* [CP] Check Pods Manifest.lock */,
+				EB1364D82A597902008A91B3 /* Sources */,
+				EB1364D92A597902008A91B3 /* Frameworks */,
+				EB1364DA2A597902008A91B3 /* Resources */,
+				F4DAD605287CE68D1DD0D697 /* [CP] Embed Pods Frameworks */,
+				EB1365122A59BD49008A91B3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotebookSummerPractice;
+			productName = NotebookSummerPractice;
+			productReference = EB1364DC2A597902008A91B3 /* NotebookSummerPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1364F42A597903008A91B3 /* NotebookSummerPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB13650C2A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPracticeTests" */;
+			buildPhases = (
+				757F58242DFF6A0C1CDA1FC8 /* [CP] Check Pods Manifest.lock */,
+				EB1364F12A597903008A91B3 /* Sources */,
+				EB1364F22A597903008A91B3 /* Frameworks */,
+				EB1364F32A597903008A91B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1364F72A597903008A91B3 /* PBXTargetDependency */,
+			);
+			name = NotebookSummerPracticeTests;
+			productName = NotebookSummerPracticeTests;
+			productReference = EB1364F52A597903008A91B3 /* NotebookSummerPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1364FE2A597903008A91B3 /* NotebookSummerPracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB13650F2A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPracticeUITests" */;
+			buildPhases = (
+				2D04487DEDFE3E11C84E07B3 /* [CP] Check Pods Manifest.lock */,
+				EB1364FB2A597903008A91B3 /* Sources */,
+				EB1364FC2A597903008A91B3 /* Frameworks */,
+				EB1364FD2A597903008A91B3 /* Resources */,
+				FE0E0FDED6B491F82E97CED9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1365012A597903008A91B3 /* PBXTargetDependency */,
+			);
+			name = NotebookSummerPracticeUITests;
+			productName = NotebookSummerPracticeUITests;
+			productReference = EB1364FF2A597903008A91B3 /* NotebookSummerPracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1364D42A597902008A91B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EB1364DB2A597902008A91B3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EB1364F42A597903008A91B3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EB1364DB2A597902008A91B3;
+					};
+					EB1364FE2A597903008A91B3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EB1364DB2A597902008A91B3;
+					};
+				};
+			};
+			buildConfigurationList = EB1364D72A597902008A91B3 /* Build configuration list for PBXProject "NotebookSummerPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1364D32A597902008A91B3;
+			productRefGroup = EB1364DD2A597902008A91B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1364DB2A597902008A91B3 /* NotebookSummerPractice */,
+				EB1364F42A597903008A91B3 /* NotebookSummerPracticeTests */,
+				EB1364FE2A597903008A91B3 /* NotebookSummerPracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1364DA2A597902008A91B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1364EF2A597903008A91B3 /* LaunchScreen.storyboard in Resources */,
+				EB1364EC2A597903008A91B3 /* Assets.xcassets in Resources */,
+				EB1364E72A597902008A91B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364F32A597903008A91B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364FD2A597903008A91B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D04487DEDFE3E11C84E07B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757F58242DFF6A0C1CDA1FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotebookSummerPracticeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCD045431F92A0126A2F5AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotebookSummerPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1365122A59BD49008A91B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F4DAD605287CE68D1DD0D697 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice/Pods-NotebookSummerPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice/Pods-NotebookSummerPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice/Pods-NotebookSummerPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0E0FDED6B491F82E97CED9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests/Pods-NotebookSummerPractice-NotebookSummerPracticeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1364D82A597902008A91B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1365222A5B18FD008A91B3 /* AddNewEventTableViewCell.swift in Sources */,
+				EB1364EA2A597902008A91B3 /* NotebookSummerPractice.xcdatamodeld in Sources */,
+				EB1365242A5B66C0008A91B3 /* DatePickerTableViewCell.swift in Sources */,
+				EB1365342A5C1209008A91B3 /* EventModel.swift in Sources */,
+				EB1365202A5AFA78008A91B3 /* AddNewEventViewController.swift in Sources */,
+				EB1365282A5B7C0B008A91B3 /* CustomTextView.swift in Sources */,
+				EB13652A2A5BF185008A91B3 /* DateConfigurator.swift in Sources */,
+				EB13652D2A5C0DF4008A91B3 /* MainCalendarPresenter.swift in Sources */,
+				EB1365362A5C12A9008A91B3 /* RealmManager.swift in Sources */,
+				EB1365262A5B7A26008A91B3 /* AddNewEventTextViewCell.swift in Sources */,
+				EB1364E42A597902008A91B3 /* ViewController.swift in Sources */,
+				EBCFC3042A5C684200490416 /* EventDetailViewController.swift in Sources */,
+				EB1365142A5AAAAE008A91B3 /* MainCalendarViewController.swift in Sources */,
+				EBCFC3082A5C7DC000490416 /* DateExtension.swift in Sources */,
+				EB1364E02A597902008A91B3 /* AppDelegate.swift in Sources */,
+				EB1365322A5C0FD8008A91B3 /* FetchDataFromJSON.swift in Sources */,
+				EB1365382A5C1442008A91B3 /* EventModelDTO.swift in Sources */,
+				EB13651D2A5AE8A5008A91B3 /* CalendarTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364F12A597903008A91B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1364FA2A597903008A91B3 /* NotebookSummerPracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1364FB2A597903008A91B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1365042A597903008A91B3 /* NotebookSummerPracticeUITests.swift in Sources */,
+				EB1365062A597903008A91B3 /* NotebookSummerPracticeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1364F72A597903008A91B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1364DB2A597902008A91B3 /* NotebookSummerPractice */;
+			targetProxy = EB1364F62A597903008A91B3 /* PBXContainerItemProxy */;
+		};
+		EB1365012A597903008A91B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1364DB2A597902008A91B3 /* NotebookSummerPractice */;
+			targetProxy = EB1365002A597903008A91B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1364E52A597902008A91B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1364E62A597902008A91B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1364ED2A597903008A91B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1364EE2A597903008A91B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1365072A597903008A91B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB1365082A597903008A91B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB13650A2A597903008A91B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D1F0AD2A4D8B26C0F4CEBF /* Pods-NotebookSummerPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotebookSummerPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB13650B2A597903008A91B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1742F81E54BC33DA5DB70663 /* Pods-NotebookSummerPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotebookSummerPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB13650D2A597903008A91B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DC15C14734E59659590898 /* Pods-NotebookSummerPracticeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotebookSummerPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotebookSummerPractice";
+			};
+			name = Debug;
+		};
+		EB13650E2A597903008A91B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1548729BEA3FBCF34624759 /* Pods-NotebookSummerPracticeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotebookSummerPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotebookSummerPractice";
+			};
+			name = Release;
+		};
+		EB1365102A597903008A91B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB74DF3327A26C985B8B351 /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotebookSummerPractice;
+			};
+			name = Debug;
+		};
+		EB1365112A597903008A91B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902AE96EF32677289D2571CA /* Pods-NotebookSummerPractice-NotebookSummerPracticeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NHN3ZNUVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratGin.NotebookSummerPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotebookSummerPractice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1364D72A597902008A91B3 /* Build configuration list for PBXProject "NotebookSummerPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1365072A597903008A91B3 /* Debug */,
+				EB1365082A597903008A91B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1365092A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB13650A2A597903008A91B3 /* Debug */,
+				EB13650B2A597903008A91B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB13650C2A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB13650D2A597903008A91B3 /* Debug */,
+				EB13650E2A597903008A91B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB13650F2A597903008A91B3 /* Build configuration list for PBXNativeTarget "NotebookSummerPracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1365102A597903008A91B3 /* Debug */,
+				EB1365112A597903008A91B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB1364E82A597902008A91B3 /* NotebookSummerPractice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB1364E92A597902008A91B3 /* NotebookSummerPractice.xcdatamodel */,
+			);
+			currentVersion = EB1364E92A597902008A91B3 /* NotebookSummerPractice.xcdatamodel */;
+			path = NotebookSummerPractice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB1364D42A597902008A91B3 /* Project object */;
+}
